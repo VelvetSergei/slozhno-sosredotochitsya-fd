@@ -82,9 +82,15 @@
 .header__theme-menu-button {
   border: none;
   background: transparent;
+  text-transform: lowercase;
   text-align: center;
   color: var(--accent-color);
   padding: 0 13px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
 }
 
 .header__title {
@@ -96,20 +102,35 @@
   line-height: 83%;
 }
 
-.title-decor {
-  
+.title-decor { 
   background-color: var(--accent-color); 
-
-
+  color: var(--accent-text-color);
 }
 
 .header__text {
   font-weight: 700;
   font-size: var(--font-size);
-  color: var(--heder-text-color);
   line-height: 23.4px;
   max-inline-size: 491px;
   max-block-size: 71px;
   justify-self: end;
   align-self: center;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border:1px solid rgba(255, 0, 112, 0.4);
+  cursor: pointer;
 }
