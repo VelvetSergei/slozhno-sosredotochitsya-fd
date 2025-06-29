@@ -4,6 +4,7 @@
 */
 :root {
   --accent-color: #ff0070;
+  --button-color: #ff0070;
   --backgroung-image: url(../images/cover-image-dark.png);
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
