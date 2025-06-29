@@ -2,4 +2,114 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: var(--font-family, monospace);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 23.4px;
+  background-image: var(--backgroung-image);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Заголовок*/
+
+.header {
+  min-block-size: 100vh;
+  display: grid;
+  position: relative;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.decorative__element {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent-color);
+  text-align: center;
+  padding-right: 8px;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.decorative__element::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 4px var(--accent-color);
+  background-color: var(--accent-color);
+  inline-size: 7px;
+  block-size: 7px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 20px;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  margin: 20px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background: transparent;
+  text-align: center;
+  color: var(--accent-color);
+  padding: 0 13px;
+}
+
+.header__title {
+  margin-left: -20px;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: var(--title-color);
+  font-weight: 700;
+  line-height: 83%;
+}
+
+.title-decor {
+  
+  background-color: var(--accent-color); 
+
+
+}
+
+.header__text {
+  font-weight: 700;
+  font-size: var(--font-size);
+  color: var(--heder-text-color);
+  line-height: 23.4px;
+  max-inline-size: 491px;
+  max-block-size: 71px;
+  justify-self: end;
+  align-self: center;
 }
