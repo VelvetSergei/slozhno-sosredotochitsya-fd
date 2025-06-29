@@ -202,3 +202,23 @@
 .answer__section-title-what {
   margin-block-end: 10px;
 }
+
+.question__section-how {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  padding-block-end: 80px;
+  margin: 0 20px;
+}
+
+.question__section-subtitle {
+  font-weight: 400;
+}
+
+.answer__section-how {
+  display: grid;
+  gap: 20px;
+}
+
+.answer__section-text-how-padding {
+  padding-block-start: 10px;
+}
