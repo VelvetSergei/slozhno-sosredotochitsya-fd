@@ -27,6 +27,7 @@
 .decorative__element {
   content: "";
   position: absolute;
+  visibility: var(--decoration-visibility);
   top: 0;
   right: 0;
   display: flex;
@@ -109,6 +110,7 @@
 .header__theme-menu-button:hover {
   border: 1px solid rgba(255, 0, 112, 0.4);
   cursor: pointer;
+  border: 1px solid #32312D66
 }
 
 .header__title {
