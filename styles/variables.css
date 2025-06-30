@@ -6,10 +6,11 @@
   --accent-color: #ff0070;
   --button-color: #ff0070;
   --backgroung-image: url(../images/cover-image-dark.png);
-  --font-family: 'IBM Plex mono';
+  --font-family: "IBM Plex mono";
   --font-size: 18px;
-  --title-color: #DB00FF;
+  --title-color: #db00ff;
   --accent-text-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --decoration-visibility: visible;
+  --menu-button-hover: rgba(255, 0, 112, 0.4);
 }
