@@ -295,7 +295,7 @@
 
 /*768px*/
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
@@ -314,13 +314,13 @@
   }
 
   .header__title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .question__section-why {
     grid-template-columns: 33% 67%;
     gap: 20px;
-    padding-inline-end:20px;
+    padding-inline-end: 20px;
   }
 
   .question__section-title-what {
@@ -334,16 +334,103 @@
     padding-block-start: 20px;
   }
 
-  
   .question__section-how {
     display: grid;
     grid-template-columns: 35% 65%;
     padding-block-end: 80px;
-  }  
- 
+  }
+
   .footer {
     padding: 20px;
     display: flex;
     justify-content: center;
+  }
+}
+
+/*375px*/
+
+@media (max-width:375px) {
+ .header {
+  padding: 10px;
+}
+
+.header__title {
+  margin-left: 0px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.header__text {
+  max-inline-size: 355px;
+  max-block-size: 117px;
+}  
+
+  .decorative__element {
+    margin: 10px;
+  }
+  
+  .decorated-zone::before {
+    margin: 10px;
+  }
+  
+  .decorated-zone::after {
+    block-size: 25px;
+    margin: 10px;
+  }
+
+.question__section-why {
+  margin: 0px 10px;
+  padding: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question__section-what {
+  margin: 0 10px;
+  padding-block-start: 50px;
+  padding-inline-end: 0 ;
+  padding-block-end: 50px;
+}
+
+.question__section-title-what {
+  min-inline-size: 355px;
+}
+
+.answer__section-what-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.question__section-how {
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-end: 50px;
+}
+
+.galery__section {
+  padding: 0 0 40px 0;
+}
+
+.galery__section-title {
+  margin: 0 10px 10px 10px;
+}
+
+.galery__section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.footer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+} 
+
+.footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
