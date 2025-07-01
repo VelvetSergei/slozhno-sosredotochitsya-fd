@@ -22,3 +22,16 @@
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --button-color: #353430;
+    --backgroung-image: url(../images/cover-image-light.png);
+    --title-color: #ffc2e6;
+    --accent-text-color: #353430;
+    --text-color: #353430;
+    --decoration-visibility: hidden;
+    --menu-button-hover: rgba(50, 49, 45, 0.4);
+  }
+}

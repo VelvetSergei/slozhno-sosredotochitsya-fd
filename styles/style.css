@@ -7,6 +7,7 @@
   font-weight: 400;
   font-size: var(--font-size);
   line-height: 23.4px;
+  background-color: #000028;
   background-image: var(--backgroung-image);
   background-repeat: no-repeat;
   background-position: top center;
@@ -21,7 +22,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 20px;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .decorative__element {
@@ -90,12 +92,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--button-color);
-  pointer-events: none;
-}
-
-.header__theme-menu-button_active {
-  border: 1px solid var(--button-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
@@ -133,16 +130,25 @@
   font-size: var(--font-size);
   line-height: 23.4px;
   max-inline-size: 491px;
-  max-block-size: 71px;
 }
 
 /* Main*/
 
 .question__section-title {
   color: var(--button-color);
+  font-family: var(--font-family);
   font-weight: 700;
   font-size: var(--font-size);
   line-height: 23.4px;
+  letter-spacing: 0;
+}
+
+.answer__section-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size);
+  line-height: 23.4px;
+  letter-spacing: 0;
 }
 
 .answer__section-text {
@@ -174,13 +180,13 @@
   padding-block-start: 60px;
 }
 
-.answer__section-why {
+.section-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.answer__section-why p:first-of-type {
+.section-card p:first-of-type {
   padding-block-end: 10px;
 }
 
@@ -211,11 +217,11 @@
   padding-block-end: 80px;
 }
 
-.question__section-subtitle {
+.answer__section-subtitle {
   font-weight: 400;
 }
 
-.answer__section-how {
+.answer__section-how-container {
   display: grid;
   gap: 20px;
 }
@@ -283,7 +289,8 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer__title {
@@ -311,7 +318,6 @@
 
   .header__text {
     max-inline-size: 364px;
-    max-block-size: 117px;
   }
 
   .header__title {
@@ -350,7 +356,7 @@
 
 /*375px*/
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   .header {
     padding: 10px;
   }
@@ -362,7 +368,6 @@
 
   .header__text {
     max-inline-size: 355px;
-    max-block-size: 117px;
   }
 
   .decorative__element {
